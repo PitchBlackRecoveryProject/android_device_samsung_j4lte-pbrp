@@ -1,1 +1,1 @@
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_j4lte.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/pbrp_j4lte.mk
