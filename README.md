@@ -1,4 +1,4 @@
-# TWRP device tree for the Samsung Galaxy J4 (SM-J400; j4lte)
+# PBRP device tree for the Samsung Galaxy J4 (SM-J400; j4lte)
 
 ## Build Steps
 
