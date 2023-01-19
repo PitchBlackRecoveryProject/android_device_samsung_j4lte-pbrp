@@ -7,7 +7,7 @@
 # source.
 
 $ . build/envsetup.sh # Prepare build environment.
-$ lunch omni_j4lte-eng # 'Lunch' the j4lte configuration.
+$ lunch pbrp_j4lte-eng # 'Lunch' the j4lte configuration.
 $ mka recoveryimage # Build.
 ```
 
@@ -22,3 +22,8 @@ http://www.apache.org/licenses/LICENSE-2.0
 ```
 
 This tree is based on: https://github.com/synt4x93/android_device_samsung_xcover4lte. Thanks to [@synt4x93](https://github.com/synt4x93)!
+
+
+CREDITS:
+
+Hendra Manudinata - my device tree based on him for TWRP.
