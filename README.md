@@ -3,7 +3,7 @@
 ## Build Steps
 
 ```bash
-# Make sure you've synced the TWRP android-9.0
+# Make sure you've synced the PBRP android-9.0
 # source.
 
 $ . build/envsetup.sh # Prepare build environment.
