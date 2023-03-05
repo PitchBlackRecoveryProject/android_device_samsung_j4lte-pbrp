@@ -1,5 +1,10 @@
 LOCAL_PATH := device/samsung/j4lte
 
+ALLOW_MISSING_DEPENDENCIES=true
+
+# A/B 
+AB_OTA_UPDATER := false # device is not support A/B
+
 # Firmware
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
@@ -24,6 +29,10 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+# Partitions
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 39845888
+BOARD_FLASH_BLOCK_SIZE := 131072
+
 # Kernel
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel/Image
 BOARD_KERNEL_BASE := 0x10000000
@@ -31,7 +40,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset 0x01000000
 BOARD_MKBOOTIMG_ARGS += --tags_offset 0x00000100
-BOARD_MKBOOTIMG_ARGS += --dt $(LOCAL_PATH)/kernel/dtb.img
+BOARD_MKBOOTIMG_ARGS += --dtb $(LOCAL_PATH)/kernel/dtb.img
 
 # File systems
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -57,3 +66,8 @@ TW_EXCLUDE_SUPERSU := true
 # PBRP Flags
 PB_TORCH_PATH := "/sys/devices/virtual/camera/flash/rear_flash"
 PB_TORCH_MAX_BRIGHTNESS := 1
+TARGET_SUPPORTS_64_BIT_APPS := false
+
+# Treble 
+TARGET_COPY_OUT_VENDOR := vendor
+
